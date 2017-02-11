@@ -6,7 +6,7 @@ apt update
 apt -y upgrade
 apt -y install build-essential
 apt -y install git-core
-apt install -y libssl-dev libreadline-dev zlib1g-dev
+apt -y install libssl-dev libreadline-dev zlib1g-dev
 
 # Install rbenv
 git clone git://github.com/sstephenson/rbenv.git /usr/local/rbenv
@@ -19,6 +19,7 @@ echo 'eval "$(rbenv init -)"' >> /etc/profile.d/rbenv.sh
 
 chmod +x /etc/profile.d/rbenv.sh
 source /etc/profile.d/rbenv.sh
+echo 'source /etc/profile.d/rbenv.sh' >> ~/.bashrc
 
 # Install ruby-build:
 pushd /tmp
