@@ -2,10 +2,11 @@
 # Link: https://gist.github.com/jnx/1256593
 
 # Update, upgrade and install development tools:
-apt-get update
-apt-get -y upgrade
-apt-get -y install build-essential
-apt-get -y install git-core
+apt update
+apt -y upgrade
+apt -y install build-essential
+apt -y install git-core
+apt install -y libssl-dev libreadline-dev zlib1g-dev
 
 # Install rbenv
 git clone git://github.com/sstephenson/rbenv.git /usr/local/rbenv

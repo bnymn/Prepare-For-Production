@@ -1,8 +1,11 @@
 # Install rbenv system wide
 ./rbenv-install-system-wide.sh
 
+# Install my favorite tools
+apt -y install nano mc screen
+
 # Install dependencies for Ruby
-apt install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev nodejs
+apt -y install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev nodejs
 
 # Install bundler
 gem install bundler
