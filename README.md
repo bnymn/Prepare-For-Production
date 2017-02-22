@@ -9,6 +9,8 @@ This is how I prepare my production environment for my rails applications.
 ```mysql
 CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
 
+CREATE DATABASE `databasename`;
+
 GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
 
 FLUSH PRIVILEGES;
