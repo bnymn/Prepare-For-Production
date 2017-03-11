@@ -11,7 +11,9 @@ CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
 
 CREATE DATABASE `databasename`;
 
-GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
+ALTER DATABASE `databasename` CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+GRANT ALL PRIVILEGES ON `databasename`.* TO 'newuser'@'localhost';
 
 FLUSH PRIVILEGES;
 ```
