@@ -11,8 +11,9 @@ apt -y install git-core curl zlib1g-dev build-essential libssl-dev libreadline-d
 gem install bundler
 
 # Install NodeJS
-curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
-apt install -y nodejs
+sudo apt-get install curl
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+apt install nodejs
 
 # Install rails
 gem install rails -v 4.2.7.1
